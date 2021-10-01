@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "liento-circular-black";
+    src: local("liento-circular-black"), url('../fonts/lineto-circular-black.woff') format('woff')
+}
+
+@font-face {
+    font-family: "proxima-nova-bold-webfont";
+    src: local("proxima-nova-bold-webfont"), url('../fonts/proxima-nova-bold-webfont.woff') format('woff')
+}
+.header-bar{
+    display: block;
+}
+.header-bar a {
+    color: black;
+    font-weight: 800;
+    margin-right: 50px;
+    float: right;
+    padding: 0px -40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: filson-pro, sans-serif;
+    font-weight: normal;
+    margin-top: -120px;
+}
+a:hover{
+    /* color: -webkit-link; */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.flexContainer
+{
+    display: flex;
+    width: 33% 33% 33%;
+}
+.workGrid
+{
+    display: grid;
+    grid-template-areas: 
+    "one one two two"
+    "one one two two"
+    "three three four four"
+    "three three four four";
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    background-color: grey;
+    /* padding: 10px; */
+}
+.one {
+    grid-area: one;
+  }
+  
+  .two {
+    grid-area: two;
+  }
+  
+  .three {
+    grid-area: three;
+  }
+  
+  .four {
+    grid-area: four;
+  }
+  
+h1 {
+    display: inline-flex;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: filson-pro, sans-serif;
+    font-size: 24px;
+    padding: 0px 100px;
+    color: black;
+    display: flex;
+}
+h3{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: filson-pro, sans-serif;
+    font-size: 24px;
+    padding: 0px 100px;
+    color: black;
+    display: flex;
+}
+h4{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: filson-pro, sans-serif;
+    font-size: 24px;
+    padding: 0px 100px;
+    padding-left: 50px;
+    color: black;
+    display: flex;
+}
+.projectButton
+{
+    position: relative;
+    left: 100px;
+
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.projectButton:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+p{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: filson-pro, sans-serif;
+    font-size: 20px;
+    padding: 0px 100px;
+    color: black;
+    display: flex;
+}
+p.grid{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: filson-pro, sans-serif;
+    font-size: 20px;
+    padding: 0px 50px;
+    color: black;
+    display: flex;
+}
+
+.name {
+    font-size: 85px;
+    margin-top: -100px;
+    margin-left: 50px;
+    padding: 0px 100px;
+    /* text-align: center; */
+    /* padding: 20px; */
+    color: black;
+    font-family: "New-Spirit" ;
+    display: inline-flex;
+}
+
+img {
+    display: inline-flex;
+    /* not circular for some reason */
+    /* border-radius: 50%; */
+    /* margin-top: 50px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.footer{
+    background-color: #373738;
+}
+
+.footer ul{
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+}
+
+.body {
+    height: 100vh;
+    position: initial;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+.flexContainer
+{
+    display: flex;
+    width: 100%;
+}
+.workGrid
+{
+    display: grid;
+    grid-template-areas: 
+    "one one"
+    "one one"
+    "two two"
+    "two two"
+    "three three"
+    "three three"
+    "four four"
+    "four four";
+    grid-gap: 10px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 300px;
+    background-color: grey;
+    /* padding: 10px; */
+}
+.one {
+    grid-area: one;
+  }
+  
+  .two {
+    grid-area: two;
+  }
+  
+  .three {
+    grid-area: three;
+  }
+  
+  .four {
+    grid-area: four;
+  }
+}
